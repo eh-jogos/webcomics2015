@@ -1,0 +1,364 @@
+/*
+
+Theme Name: Webcomic 20-15
+Description: A child theme of Twenty Fifteen for image gallery sites.
+Author: Daniel "Vandalk" Queiroz Porto
+Version: 0.0.
+Template: twentyfifteen
+
+*/
+
+.site-title {
+	font-family: "Noto Sans", sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 80px;
+	margin-left: 100px;
+	margin-bottom: 0;
+	clear: none;
+}
+
+.webcomic-nav li,
+.webcomic-terms li,
+.widget_collapsarch li{
+	list-style-type: none;
+} 
+
+.taxonomy-description {
+	margin-left:0;
+}
+
+/* IDEIAS PARA ESTILIZAR O ARCHIVE NAVIGATION
+.archive-navigation .nav-next, .archive-navigation .nav-previous {
+	float:left;
+	width:50%;
+	background-repeat: no-repeat; 
+	background-size: contain; 
+	background-position: right; 
+}
+*/
+
+/* -- WEBCOMIC RELATED STYLING -- */
+ .webcomic-display-wrapper {
+	display: block;
+	width: auto ;
+ }
+ 
+  .webcomic-image-wrapper{
+	display: block;
+	max-width: 1040px;
+	width: 100%;
+	margin: 0 auto;
+	
+ }
+ 
+  .webcomic-image-wrapper img {
+	display: block;
+	height: auto;
+	max-width: 900px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* --- WEBCOMIC NAVIGATION --- */
+
+ .webcomic-nav-wrapper {
+	max-width: 1040px;
+	width:100%;
+	margin: 0 auto;
+	color: black;
+ }
+ .webcomic-nav-wrapper:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+
+ ul.webcomic-nav{
+	max-width: 900px;
+	width:100%;
+	margin: 0 auto;
+ }
+ 
+ li.webcomic-nav-button a {
+	width: 50%;
+	height:48px;
+	float: left;
+	text-align: center;
+	font-family: "Raleway","Open-sans",sans serif;
+	font-size:24px;
+	font-weight:500;
+	line-height: 48px;
+	color: black;
+	text-decoration:none;
+ }
+ 
+  li.webcomic-nav-button a span{
+	font-size:16px;
+  }
+   
+  li.webcomic-nav-button a:hover,
+  li.webcomic-nav-button a:focus,
+  #webcomic-nav-middle-btn  a:hover,
+  #webcomic-nav-middle-btn  a:focus{
+	color: #680000;
+	background-color:white;
+	font-weight:700;
+ }
+ 
+ #webcomic-nav-middle-btn {
+	width: 100%;
+	height:48px;
+	float: left;
+	text-align: center;	
+	line-height: 48px;
+ }
+ 
+ #webcomic-nav-middle-btn select{
+	width: 80%;
+ }
+ 
+ /* ---- Just in case you use a "Archive" or "Random" option instead of a "DropDown" ----*/
+ #webcomic-nav-middle-btn a{
+	width: 100%;
+	height:inherit;
+	float: left;
+	text-align: center;	
+	line-height: 48px;
+ }
+ 
+/* --- END OF WEBCOMIC NAVIGATION --- */ 
+
+/* --- WEBCOMIC TEMPLATE: Arquivo Anual --- */
+ 
+article.webcomic-archive{
+	margin-top: 0;
+}
+
+.webcomic-archive ul,
+.webcomic-archive ol{
+	list-style: none;
+}
+
+.webcomic-archive  .webcomic-term{
+	margin-bottom: 48px;
+}
+
+.webcomic-archive .parent-storyline{
+	margin-bottom: 0;
+}
+
+.webcomic-archive .child-storyline{
+	margin-left: 48px;
+}
+
+.webcomic-archive .webcomic-term:after,
+.webcomic-archive .webcomics:after {
+	clear:both;
+	content:"";
+	display:table;
+}
+
+.webcomic-archive .webcomic-term-link{
+	display: block;
+	margin:0 auto;
+	text-decoration:none;
+	text-indent: -9999px;
+	line-height: 0;
+	border:none;
+}
+
+.webcomic-archive .webcomic-term-name{
+	line-height: 1.714285714;
+	font-family: "Raleway","Open-sans",sans serif;
+	font-weight:500;
+	font-size:	32px;
+	text-indent: 0px;
+}
+
+.webcomic-archive .webcomic-term-image {
+	text-indent:0px;
+}
+
+.webcomic-archive .webcomic-term-image img{
+	width:	100%;
+	height: auto;
+}
+
+.webcomic-archive .webcomic-term-description{
+	margin:12px auto 24px auto;
+}
+
+.webcomic-archive .webcomics {
+	margin:0;
+}
+
+.webcomic-archive .webcomics li,
+.webcomic-archive .webcomic-term-image{
+	background-color: #680000;
+}
+ 
+.webcomic-archive .webcomics li {
+	float: left;
+	margin-bottom:12px;
+}
+
+.webcomic-archive .webcomics li a{
+	display: block;
+	border:none;
+}
+
+.webcomic-archive .webcomics li a img {
+	border-right: 4px solid #fff;
+	border-left: 4px solid #fff;
+} 
+
+.webcomic-archive .webcomic-term-link img:hover,
+.webcomic-archive .webcomic-term-link img:focus,
+.webcomic-archive .webcomics li a:hover,
+.webcomic-archive .webcomics li a:focus{
+	opacity: 0.7;
+}
+ 
+ 
+/* --- WEBCOMIC TEMPLATE: Arquivo Anual --- */
+ 
+
+
+/**
+ * 16.1 Mobile Large 620px
+ */
+
+@media screen and (min-width: 38.75em) {
+
+	.hentry,
+	.page-header,
+	.page-content,
+	.webcomic-display-wrapper,
+	.comments-area {
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+		margin: 0 7.6923%;
+	}
+	
+	article.webcomic-archive{
+		margin-top: 0;	
+	}
+
+	.webcomic-display-wrapper {
+		/*box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);*/
+	}
+	
+	
+	.site-footer{
+		width: 100%;
+		margin: 0;
+		padding: 3.84615% 15.3846%;
+	}
+	
+}
+
+
+/**
+ * 16.2 Webcomic FIX 750px
+ */
+@media screen and (min-width: 750px) {
+
+	/* --- WEBCOMIC RELATED STYLING --- */
+	
+	li.webcomic-nav-button a {
+		width: 18%;
+		font-size:24px;
+	}
+	
+	li.webcomic-nav-button a span{
+		font-size:16px;
+	}
+	
+	.webcomic-display-article-wrapper h1 a {
+		font-family: "Raleway","Open-sans",sans serif;
+		font-size: 32px;
+		font-weight:500;
+	}
+	
+	#webcomic-nav-middle-btn {
+		width: 28%;
+		height:48px;
+		float: left;
+		text-align: center;	
+		line-height: 48px;
+	}
+	
+	/* --- END OF WEBCOMIC RELATED STYLING --- */
+
+}
+/* END OF Minimum width of 750 pixels. */
+ 
+
+/**
+ * 16.4 Desktop Small 955px
+ */
+
+@media screen and (min-width: 59.6875em) {
+
+	body:before {
+		background: none;
+		box-shadow: none;
+		content: "";
+		display: block;
+		height: 0;
+		min-height: 0;
+		position: static;
+		top: 0;
+		left: 0;
+		width: 0;
+		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
+	}
+	
+	.sidebar{
+		background-color: #ffffff;
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+	}
+
+	.site-title {
+		line-height: 1.3636;
+		margin-left: 0;
+		margin-bottom: 0;
+		clear: both;
+	}
+	
+	.hentry,
+	.page-header,
+	.page-content,
+	.webcomic-display-wrapper,
+	.comments-area
+	{
+		margin: 0 0 0 8.3333%;
+	}
+	
+	.post-navigation,
+	.pagination{
+		margin: 8.3333% 0 0 8.3333%;
+	}
+	
+	.site-footer{
+		width: 64.7059%;
+		margin: 0 0 0 35.2941%;
+		padding: 0;
+	}
+	
+	article.webcomic-archive.hentry {
+		margin-top: 0;
+		padding-top:24px;
+	}
+	
+	#archive-separator.entry-content{
+		padding: 12px 10%;
+		background-color: #e6e6e6;
+		margin-top:0;
+	}
+	
+	#archive-separator.entry-content p{
+		color: #000;
+	}
+	
+}
